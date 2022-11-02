@@ -34,21 +34,21 @@
 
 ///Add
 #if defined(__BL_CLIENT_LOCALE_STRING__)
-	if (!rkLocale.LoadLocaleTextString(szLocaleTextString))
+	if (!rkLocale.LoadLocaleString(szLocaleTextString))
 	{
-		TraceError("LoadLocaleData - LoadLocaleTextString(%s) Error", szLocaleTextString);
+		TraceError("LoadLocaleData - LoadLocaleString(%s) Error", szLocaleTextString);
 		return false;
 	}
 
-	if (!rkLocale.LoadLocaleQuestString(szLocaleQuestString))
+	if (!rkLocale.LoadQuestLocaleString(szLocaleQuestString))
 	{
-		TraceError("LoadLocaleData - LoadLocaleQuestString(%s) Error", szLocaleQuestString);
+		TraceError("LoadLocaleData - LoadQuestLocaleString(%s) Error", szLocaleQuestString);
 		return false;
 	}
 
-	if (!rkLocale.LoadLocaleQuizString(szLocaleQuizString))
+	if (!rkLocale.LoadOXQuizLocaleString(szLocaleQuizString))
 	{
-		TraceError("LoadLocaleData - LoadLocaleQuizString(%s) Error", szLocaleQuizString);
+		TraceError("LoadLocaleData - LoadOXQuizLocaleString(%s) Error", szLocaleQuizString);
 		return false;
 	}
 #endif
